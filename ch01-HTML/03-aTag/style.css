@@ -1,0 +1,47 @@
+.demo-status {
+    color: teal;
+}
+
+.demo-status:active{
+    color: blue !important;
+}
+
+.demo-status:hover{
+    color: purple;
+}
+
+.demo-button{
+    display: inline-block;
+    border: 1px solid black;/*độ dày - kiểu viền - màu  */
+    text-decoration: none;/*trang trí của chữ*/
+    text-transform: uppercase;/*biến đổi kiểu chữ*/
+    color: black;
+    font-family: sans-serif;/*kiểu chữ */
+    font-weight: 700;/*mặc định là thin = 400, bold là 700, trên thực tế chỉ xài đc 400 vs 700*/
+    padding: 10px 15px ;
+    margin: 10px;
+    transition: 0.3s;
+    /*
+     nếu có 2 tham số thì trên-dưới, trái-phải
+     nếu 3 thì trên , trái-phải, dưới
+    */
+
+    /* 
+    chữ mặc định là 16 , chiều cao mặc định là 18
+    border: viền
+    padding: khoảng cách từ chữ đến border
+    margin: khoảng từ border so với vật thể xung quanh nó
+    model-box: là padding, margin, border, content
+    */
+
+    /* 
+    công thức tính ô trên điện thoại là 
+    (1280 - 10) / ( model-box )
+    */
+}
+
+.demo-button:hover{
+    color: white;
+    background-color: black;
+    
+}

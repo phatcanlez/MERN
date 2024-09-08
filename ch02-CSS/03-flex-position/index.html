@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-flex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- font -->
+    <p>
+        Quang Trung Nguyễn Huệ là 2 anh em, đó là người nào nói zậy <br />
+        còn tôi, thì họ là 1 người duy nhất
+    </p>
+
+    <div class="demo-sticky">Tôi là Sticky</div>
+
+    <!-- flex 
+    chia layout:
+    cách 1: inline-block + font-size
+    cách 2: float + clearfix
+
+    2015: flex | Grid
+    flex: thay thế cho các cách chia layout cũ 
+    game chia layout: flexbox froggy
+
+    flex chia làm 2 trục, nguyên tắc bàn tay trái, cố gắng gom hết tất cả phần tử vào 1 hàng
+    trục chính: justify (ngón cái) chỉ có content
+    trục phụ: align (ngón trỏ) có cả content và items
+    start ===> end 
+
+    content: là giữa các khoảng hở, di chuyển từng hàng, điều kiển khoảng hở giữ các khối item
+        space-between là cho dạt ra sát 2 lề có khoảng hở với center (khoảng trống ở giữa)
+        space-around là cho dạt ra có khoảng hở giữa các around với lề và center (khoảng trống ở giữa và 2 lề)
+        space-evenly là tất cả các khoảng hở đều bằng nhau
+    items: là điều kiển cả khối các items cùng dịch chuyển, đi theo chùm
+        mặc định là stretch tương đương height = 100%
+
+    flex-direction:
+        row: trục mặc định
+            row-reverse: đảo trục row 180 độ (đảo start - end) -> end ==> start
+        
+        col: trục chính hướng xuống dưới
+            col-reverse: trục chính hướng ngược lên (ngược lại với col)
+
+    !!!LƯU Ý: khi đảo col thì trục chính xài justify, trục phụ xài align (ngang - align, dọc - justify)
+
+    div con:
+        order: mặc định tất cả order = 0 (chỉ dành cho phần tử con)
+            càng nhỏ càng đc ưu tiên
+
+        align-self: điều kiển chính nó 
+
+    flex-wrap:
+        nowrap: mặc định
+        wrap: là phần tử dư bị đẩy xuống 1 hàng mới
+        wrap-reverse: đảo trục phụ
+
+    flex-flow: là kết hợp của flew direction và flex wrap (flex-flow: row wrap: mặc định)
+
+
+    -->
+
+    <!-- demo dùng flex cơ bản -->
+    <div class="cha">
+        <div class="con1"></div>
+        <div class="con2"></div>
+    </div>
+
+    <!-- demo flex lần 2 -->
+    <div class="chu">
+        <div class="chau">
+            <h1>Anh cháu rất quý cô chắc</h1>
+            <p>nhà anh cháu bên trái nhà cô chắc</p>
+            <p>mà chắc có vẻ như cô chắc ko mấy thiện cảm với anh cháu</p>
+        </div>
+        <div class="chac">
+            <h1>Nhà cô chắc bên phải nhà anh chắc</h1>
+            <p>cô chắc biết anh cháu rất quý mình</p>
+            <p>nhưng chắc là chắc chắc chắn không thích anh cháu</p>
+            <p>vì anh cháu dùng dép đôn chề</p>
+            <p>anh cháu còn chơi với jonny đen và anh Cáo <br>
+            họ cùng nhau dbrr Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Laboriosam similique magni eligendi? 
+            Maiores reprehenderit sequi est tenetur, quas, explicabo praesentium laborum, quam dolore pariatur odit eum dicta minus minima voluptatum?
+            </p>
+        </div>
+    </div>
+
+
+    <!--demo position-->
+    <div class="big-div">
+        <div class="small-div">Tôi là div nhỏ</div>
+        <p>Ahihi xin chào cuộc đời <br>
+           dù nhiều lần làm ta chơi vơi <br>
+           tuy học ít nhưng chơi cũng nhiều <br>
+           chiều ăn bánh tối lại vào hàng <br>
+           Ahihi xin chào cuộc đời <br>
+           dù nhiều lần làm ta chơi vơi <br>
+        </p>
+    </div>
+
+    <!-- demo fixed -->
+     <div class="btn-fb">
+        <div class="icon">F</div>
+    </div>
+
+
+    <!-- pseudo element -->
+     <div class="ahihi">
+        xin chào
+     </div>
+
+    <!-- siêu button -->
+     <button class="demo-btn">button</button>
+    <div style="height: 100vh;"></div>
+</body>
+
+</html>

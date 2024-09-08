@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/* card */
+.container{
+    /* border: 1px solid red; */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+.card-carousel{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 1320 - 10(0.5 rem mỗi bên magrin của card-carousel) / 5 = 262px - 6(3px margin mỗi bên) = 256 là kích thước của card__block  */
+
+.card__block{
+    width: 25.6rem;
+    /* border: 1px solid blue; */
+    margin: 0.3rem;
+    background-color: #fafafa;
+    padding: 0.3rem;
+    transition: 0.3s;
+}
+
+.card__block:hover{
+    box-shadow: 3px 3px 8px 1px #695e5e;
+}
+
+.card-img{
+    width: 24.8rem;
+    overflow: hidden;
+}
+
+.card-img img{
+    display: block;
+    width: 100%;
+}
+
+.card-infor{
+    margin: 0.3rem 0;
+}
+
+.card_controller{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_controller__block{
+    width: calc(50% - 1px);
+}
+
+.btn-card__controller{
+    display: block;
+    background-color: teal;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* hiệu ứng */
+.btn-card__controller:hover{
+    background-color: rgb(2, 170, 170);
+}
+
+.splide__slide{
+    display: flex;
+    justify-content: center;
+}

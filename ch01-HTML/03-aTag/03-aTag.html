@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 3 - a tag hacking</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- redirect -->
+    <!-- target là khi mở link thì nơi nó xuất hiện -->
+    <a href="" target="_self">click me</a>
+    <!-- link status (pseudo class)
+        unvisited: chưa bấm vào, chưa ghé thăm lần nào (blue)
+        active: đang đè chuột (red)
+        visited: đã truy cập (purple)
+        hover: đưa chuột vào none
+        -------
+        tất cả các thẻ đều có active và hover
+        riêng thẻ a thì có hết tất cả 4 thuộc tính trên
+    -->
+
+    <a class="demo-status" href="#">Click Me!</a>
+
+    <!-- button: nút -->
+     <button>nút nè</button>
+    <!-- dùng thẻ a để cosplay thẻ button -->
+     <a class="demo-button" href="mailto:lehodiep.1999@gmail.com">Send Nude</a>
+
+
+     <!-- thẻ a dùng làm banner -->
+    <a href="https://fptshop.com.vn/">
+        <img src="./OIP.jpg" alt="hình đẹp">
+    </a>
+
+</body>
+</html>

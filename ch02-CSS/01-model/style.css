@@ -1,0 +1,89 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* tính size của box đó từ border đi vào content */
+
+}
+
+html{
+    font-size: 62.5%;
+    /* giảm font size mặc định từ 16px xuống 10 px để dễ tính rem 
+    16 * x = 10
+    => 1 rem = 10px
+    */
+}
+
+body{
+    font-size: 1.6rem;
+    /* tăng font-size của body lên trở lại 16px mặc định  
+    10 * 1.6 = 16
+    */
+}
+/* 
+    unit size: đơn vị đo
+    px | mm | cm : hot unit (fix cứng)
+    %: ăn theo thằng cha
+    em: coi font-size của cha là 1 đơn vị
+    rem: coi font-size của html là 1 đơn vị
+*/
+
+.demo-input{
+    outline: none;
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid red;
+    outline: 2px solid blue;
+    outline-offset: 1rem;
+}
+
+.demo-border{
+    border: 3px solid teal;
+    border-top: 3px solid red;   
+    border-left: 3px solid yellow;   
+    border-right: 3px solid blue;   
+    border-bottom: 3px solid rebeccapurple;   
+    border-radius: 0.3rem;
+}
+
+.circle{
+    height: 30rem;
+    width: 30rem;
+    background-color: blueviolet;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.triangle{
+    height: 30rem;
+    width: 30rem;
+    border-bottom: 15rem solid black;
+    border-top: 15rem solid transparent;
+    border-left: 15rem solid transparent;
+    border-right: 15rem solid transparent;
+}
+
+
+.demo-text{
+    color: steelblue;
+    background-color: bisque;
+    font-size: 3rem;
+    /* direction: rtl; */
+    text-decoration: line-through solid chartreuse;
+    text-indent: 3rem;
+    /* letter-spacing: 3rem; */
+    /* word-spacing: 3rem; */
+    /* line-height: 10rem; */
+    /* mặc định line height là 18 px */
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 20px 7px 2px black;
+}
+
+.demo-text span{
+    vertical-align: sub;
+    /* mặc đinh là baseline */
+
+
+}

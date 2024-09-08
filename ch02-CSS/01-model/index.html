@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01: model</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- outline | border |circle | unit size | text | vertical -->
+    <!-- 
+    model-box : margin (outline | outline-offset) border padding content
+    do (outline | outline-offset) là ở 2 tầng nên ko ảnh hưởng tới model cơ bản 
+    -->
+
+    <input class="demo-input" type="text" name="" id="">
+    <!-- outline nó sẽ khác với border
+    nó thường xuất hiện ở thẻ input
+    ko ảnh hưởng đến model-box
+    margin > outline > outline-offset > border > padding > content 
+    -->
+
+    <div class="demo-border">
+        tui demo border
+    </div>
+
+    <div class="circle"></div>
+
+    <div class="triangle"></div>
+
+    <p class="demo-text">
+        xin chào bạn, <span class="">m</span>ình tên là điệp đẹp trai, còn các bạn trong lớp đều ế
+    </p>
+
+</body>
+
+</html>

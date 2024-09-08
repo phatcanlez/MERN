@@ -1,0 +1,196 @@
+<!-- comment  -->
+
+<!-- 
+HTML: hyper text markup language
+Ngôn ngữ đánh dấu siêu văn bản
+đây ko phải là ngôn ngữ lập trình
+ -->
+
+ <!-- document:
+ muốn hiển thị tài liệu như 1 trang web thì cần chạy trên nền tảng là web page(web brower) 
+ -->
+
+ <!-- 
+ trong html các thành phần đều là tag | thẻ
+ cấu trúc của 1 tag là
+ <tagName attribute > content </tagName>
+ -->
+
+ <!-- DOM document object tittle: chia thành head và body -->
+ <!DOCTYPE html>
+<html lang="en"  style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8 ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta dùng để bổ nghĩa -->
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- bộ heading
+            * trong html người ta thường đặt tên các tag| thẻ dựa theo chức năng của nó 
+        -->
+        <h1>
+            Anh Điệp đẹp trai quá
+        </h1>
+        <h2> I. Phân tích vẻ đẹp trai của anh Điệp</h2>
+        <h3>I.1 Đôi mắt của người đàn ông nhiều tiền </h3>
+        <h3>I.2 Nụ cười của tri thức trong bóng tối thời đại</h3>
+
+
+        <!-- 
+        có tất cả 6 thẻ h
+        số càng lớn thì chữ càng nhỏ
+        thẻ h thường làm tittle, đầu mục
+        các thẻ heading đều có display là block 
+        block: là thẻ mà chiếm trọn 1 hàng, ko có thẻ nào cùng hàng với nó đc
+        inline-block: thẻ mà có khối chỉ bao trọn content mà thôi
+
+        -->
+
+        <h5 style="display: inline-block;">người đẹp trai nhất</h5>
+        <h6 style="display: inline-block;">Là anh Điệp</h6>
+
+        <!-- 
+        p: paragraph: đoạn văn : block , mặc định là 16 pixal
+        br: breakline: xuống hàng 
+        -->
+        <p>
+            Tôi tên là &#8194;&#8194; điệp nhà tôi ở quận 9 <br />
+            3 đời nhà tôi làm gỗ, đến đời nhà tôi thì làm yangho
+        </p>
+
+        <!-- 
+        pre: preformated 
+        -->
+        <!-- <pre>
+        Tôi tên là    điệp nhà tôi ở quận 9
+        3 đời nhà tôi làm gỗ, đến đời nhà tôi thì làm yangho
+        </pre> -->
+
+        <!--
+         hầu hết các thẻ mà mình dùng đều có thuộc tính style 
+         text-align: căn lề cho text của thẻ
+        -->
+        <p style="text-align: center;">demo text-align với block</p>
+        <p style="text-align: center; display: inline-block;" >demo text-align với inline-block</p>
+
+        <!----------------------------------------------------------------------------------->
+
+        <!-- tag formating: bộ tượng hình đa phần đều là inline-->
+        <p><em>xin chào</em> các bạn, <del>tao</del> tôi là <mark>Điệp</mark> đẹp trai</p>
+        <p>H<sub>2</sub>0: nước</p>
+        <p>ax<sup>2</sup> + bx + c = 0</p>
+        <!-- 
+        i: italic: nghiêng | em: emphasize: nhấn mạnh 
+        b: bold  : đậm     | strong: mạnh mẽ, quan trọng
+        inline: thẻ chỉ có content, ko có hộp(ko có viền - block)
+        -->
+
+        <!----------------------------------------------------------------------------------->
+
+        <!-- pseudo tag: tag giả | thẻ mà ko có chức năng 
+         span: display inline
+         div: display block
+        -->
+        <p>
+            <span style="font-size: 30px; text-decoration: line-through; color: red;">x</span>in chào bạn
+        </p>
+
+        <!-- demo div -->
+        <div>
+            <p>người giàu sống tình cảm</p>
+            <p>ai cũng có thể trở nên giàu có</p>
+            <p>nếu như ba má họ giàu sẵn</p>
+        </div> 
+
+        <!-- 
+        Lòng ta trống lắm, lòng ta sụp
+        Như túp nhà không bốn vách xiêu;
+        Em chẳng cứu giùm, em bỏ mặc
+        Mưa đưa ta đến bến Đìu hiu.
+
+        Em ở bên mình; ta ngó say,
+        Song le bên ấy với bên này
+        Cũng xa như những bờ xa cách,
+        Không có thuyền qua, không cánh bay.
+
+        Ta thấy em xinh, khẽ lắc đầu.
+        Bởi vì ta có được em đâu!
+        Tay kia sẽ ấp nhiều tay khác,
+        Môi ấy vì ai sẽ đượm mầu. 
+        -->
+
+        <div style="color: red;">
+            <p>
+                Lòng ta trống lắm, lòng ta sụp<br />
+                Như túp nhà không bốn vách xiêu;<br />
+                Em chẳng cứu giùm, em bỏ mặc<br />
+                Mưa đưa ta đến bến Đìu hiu.
+            </p>
+        </div>
+        <div style="color: blue; text-align: right;">
+            <p>
+                Em ở bên mình; ta ngó say,<br />
+                Song le bên ấy với bên này<br />
+                Cũng xa như những bờ xa cách,<br />
+                Không có thuyền qua, không cánh bay.
+            </p>
+        </div>
+        <div style="color: red;">
+            <p>
+                Ta thấy em xinh, khẽ lắc đầu.<br />
+                Bởi vì ta có được em đâu!<br />
+                Tay kia sẽ ấp nhiều tay khác,<br />
+                Môi ấy vì ai sẽ đượm mầu.
+            </p>
+        </div>
+
+        <!-- a: hyper link references - link : inline-->
+        <a href="https://www.facebook.com/" style="color: black; text-decoration: none; cursor: default;" target="">dẫn đến tri thức</a>
+        <!-- cursor: con trỏ chuột 
+            target là hiển thị trang đích
+        -->
+
+        <p><a href="#123">456</a></p>
+        <p>Dù sức khỏe yếu dần, Tổng bí thư Nguyễn Phú Trọng vẫn duy trì lịch làm việc, sáng nghe trợ lý báo cáo, chiều họp với lãnh đạo Nhà nước. "Tổng bí thư làm việc đến hơi thở cuối cùng", PGS Nguyễn Phương Đông, bác sĩ chăm sóc sức khỏe cho Tổng bí thư nhiều năm qua ở Bệnh viện Trung ương Quân đội 108, cho biết sáng 23/7. Theo PGS Đông, hàng ngày khoảng 9h-9h30, Tổng bí thư nghe các trợ lý, thư ký báo cáo tình hình công việc. Sau 10h30 và buổi chiều, ông tiếp các lãnh đạo Đảng, Nhà nước; ngồi đọc và nghiên cứu tài liệu khi sức khỏe tốt. "Ngày 13/7, Tổng bí thư vẫn làm việc nhưng chiều chúng tôi phải đặt ống thở máy", bác sĩ Đông kể. Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu Chăm sóc Tổng bí thư hơn 4 năm qua, thiếu tá, điều dưỡng Nguyễn Thị Hồng nói "rất khâm phục sức làm việc phi thường của Tổng bí thư". Ông không dành nhiều thời gian để nghỉ ngơi. Khi tỉnh giấc, ngoài lúc uống trà buổi sáng, tập thể dục, Tổng bí thư sẽ đọc báo, làm việc, tiếp khách. Khi nào mệt, bác sĩ, điều dưỡng sẽ đề nghị ông nghỉ ngơi. "Chúng tôi bất ngờ trước sức làm việc của Tổng bí thư và thấy mình quá nhỏ bé", Thiếu tướng GS Lê Hữu Song, Giám đốc Bệnh viện Trung ương Quân đội 108, nói. Ông cho biết, Ban Bảo vệ chăm sóc sức khỏe Trung ương cùng bệnh viện 108 đã hội chẩn cùng chuyên gia y tế trong và ngoài nước, đưa ra phương án điều trị tốt nhất cho Tổng bí thư. "Khi xin thông qua phương án điều trị và sử dụng các kỹ thuật chăm sóc, ông đều nói 'tuân chỉ'. Bệnh nhân đặc biệt này luôn kiên trì điều trị và tuyệt đối tuân thủ chỉ định, cố gắng ăn và tập từng bước để sức khỏe bình phục trở lại", GS Song chia sẻ. Bác sĩ Đông (phải) cùng điều dưỡng Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp Bác sĩ Nguyễn Phương Đông cùng điều dưỡng Nguyễn Thị Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp Phía ngoài căn phòng điều trị, một bộ bàn ghế gỗ được sắp xếp ở hành lang để Tổng bí thư Nguyễn Phú Trọng ngồi thư giãn. Mỗi ngày, ông sẽ ngồi đây ngắm sông Hồng lúc bình minh và rạng đông, nói chuyện thời sự, hoặc trò chuyện vui vẻ với các y bác sĩ. Đôi lúc ông sẽ đọc thơ về phong cảnh, cuộc sống, kể về thời đạp xe trên triền đê quê mình. Theo điều dưỡng Hồng, Tổng bí thư tập thể dục vào sáng sớm và buổi tối. Khi đi bộ dọc hành lang bệnh viện, ông rất thích hát bài Bài ca Bắc Sơn. Các y bác sĩ trong ca trực sẽ tập và hát cùng ông vài câu, như Bắc Sơn nơi đó xa trường xưa, Bắc Sơn đây núi rừng chiến khu... Không khí "rộn cả góc hành lang". Chị Hồng nhớ từng sở thích của Tổng bí thư, như ông thích ăn kẹo lạc, sữa chua. Vì thế, trên bàn làm việc của ông lúc nào cũng có lọ kẹo. Mỗi lần các y, bác sĩ ngồi quanh nghe kể chuyện, ông đều lấy kẹo ra mời. Khi ăn cơm, dù có bớt lại một phần cơm hay thức ăn trong khẩu phần, nhưng lúc nào Tổng bí thư cũng ăn hết phần sữa chua. "Những gì Tổng bí thư để lại ấn tượng cho chúng tôi là tấm gương giản dị, mộc mạc, chân thành, rất quan tâm đến đời sống anh chị em trong khoa", điều dưỡng Hồng nói. Ông quan tâm hỏi han về con cái các nhân viên y tế, như cháu bao nhiêu tuổi, đi học thế nào, có khó khăn gì không? Giây phút cuối cùng biết không thể cứu Tổng bí thư, nhiều y bác sĩ đã bật khóc. "Những ngày qua, khi Tổng bí thư rời xa căn phòng này, chúng tôi vẫn luôn hướng mắt vào bàn làm việc của ông, nhớ về những lời hỏi han ân cần, những lời hát, câu thơ mà ông đã đọc. Đó là sự mất mát lớn", các y bác sĩ Bệnh viện 108 tâm sự. Tổng Bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp. Tổng bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp 13h38 ngày 19/7, Tổng bí thư Nguyễn Phú Trọng từ trần tại Bệnh viện Trung ương Quân đội 108 sau thời gian lâm bệnh, dù đã được Đảng, Nhà nước, tập thể giáo sư, bác sĩ, tận tình cứu chữa, gia đình hết lòng chăm sóc. Ông thọ 80 tuổi. Ban Chấp hành Trung ương Đảng, Quốc hội, Chủ tịch nước, Chính phủ, Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam đánh giá trong gần 60 năm công tác, Tổng bí thư Nguyễn Phú Trọng "đã có nhiều công lao to lớn, đặc biệt xuất sắc đối với sự nghiệp cách mạng vẻ vang của Đảng và dân tộc". Ông đã được Đảng, Nhà nước tặng thưởng Huân chương Sao vàng, Huy hiệu 55 năm tuổi Đảng và nhiều Huân, Huy chương cao quý khác của Việt Nam và quốc tế. Theo Thông cáo đặc biệt phát chiều 20/7, linh cữu Tổng bí thư Nguyễn Phú Trọng được quàn tại Nhà tang lễ Quốc gia số 5 Trần Thánh Tông, TP Hà Nội. Lễ viếng được tổ chức từ 7h đến 22h ngày 25/7 và 7h đến 13h ngày 26/7; lễ truy điệu 13h ngày 26/7. Lễ an táng lúc 15h cùng ngày tại Nghĩa trang Mai Dịch. Lễ viếng, lễ truy điệu Tổng bí thư Nguyễn Phú Trọng được tổ chức cùng thời gian trên tại hội trường Thống Nhất (TP HCM) và tại quê nhà xã Đông Hội, huyện Đông Anh, TP Hà Nội. Trong hai ngày Quốc tang, công sở, nơi công cộng treo cờ rủ và ngừng các hoạt động vui chơi giải trí.Dù sức khỏe yếu dần, Tổng bí thư Nguyễn Phú Trọng vẫn duy trì lịch làm việc, sáng nghe trợ lý báo cáo, chiều họp với lãnh đạo Nhà nước. "Tổng bí thư làm việc đến hơi thở cuối cùng", PGS Nguyễn Phương Đông, bác sĩ chăm sóc sức khỏe cho Tổng bí thư nhiều năm qua ở Bệnh viện Trung ương Quân đội 108, cho biết sáng 23/7. Theo PGS Đông, hàng ngày khoảng 9h-9h30, Tổng bí thư nghe các trợ lý, thư ký báo cáo tình hình công việc. Sau 10h30 và buổi chiều, ông tiếp các lãnh đạo Đảng, Nhà nước; ngồi đọc và nghiên cứu tài liệu khi sức khỏe tốt. "Ngày 13/7, Tổng bí thư vẫn làm việc nhưng chiều chúng tôi phải đặt ống thở máy", bác sĩ Đông kể. Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu Chăm sóc Tổng bí thư hơn 4 năm qua, thiếu tá, điều dưỡng Nguyễn Thị Hồng nói "rất khâm phục sức làm việc phi thường của Tổng bí thư". Ông không dành nhiều thời gian để nghỉ ngơi. Khi tỉnh giấc, ngoài lúc uống trà buổi sáng, tập thể dục, Tổng bí thư sẽ đọc báo, làm việc, tiếp khách. Khi nào mệt, bác sĩ, điều dưỡng sẽ đề nghị ông nghỉ ngơi. "Chúng tôi bất ngờ trước sức làm việc của Tổng bí thư và thấy mình quá nhỏ bé", Thiếu tướng GS Lê Hữu Song, Giám đốc Bệnh viện Trung ương Quân đội 108, nói. Ông cho biết, Ban Bảo vệ chăm sóc sức khỏe Trung ương cùng bệnh viện 108 đã hội chẩn cùng chuyên gia y tế trong và ngoài nước, đưa ra phương án điều trị tốt nhất cho Tổng bí thư. "Khi xin thông qua phương án điều trị và sử dụng các kỹ thuật chăm sóc, ông đều nói 'tuân chỉ'. Bệnh nhân đặc biệt này luôn kiên trì điều trị và tuyệt đối tuân thủ chỉ định, cố gắng ăn và tập từng bước để sức khỏe bình phục trở lại", GS Song chia sẻ. Bác sĩ Đông (phải) cùng điều dưỡng Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp Bác sĩ Nguyễn Phương Đông cùng điều dưỡng Nguyễn Thị Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp Phía ngoài căn phòng điều trị, một bộ bàn ghế gỗ được sắp xếp ở hành lang để Tổng bí thư Nguyễn Phú Trọng ngồi thư giãn. Mỗi ngày, ông sẽ ngồi đây ngắm sông Hồng lúc bình minh và rạng đông, nói chuyện thời sự, hoặc trò chuyện vui vẻ với các y bác sĩ. Đôi lúc ông sẽ đọc thơ về phong cảnh, cuộc sống, kể về thời đạp xe trên triền đê quê mình. Theo điều dưỡng Hồng, Tổng bí thư tập thể dục vào sáng sớm và buổi tối. Khi đi bộ dọc hành lang bệnh viện, ông rất thích hát bài Bài ca Bắc Sơn. Các y bác sĩ trong ca trực sẽ tập và hát cùng ông vài câu, như Bắc Sơn nơi đó xa trường xưa, Bắc Sơn đây núi rừng chiến khu... Không khí "rộn cả góc hành lang". Chị Hồng nhớ từng sở thích của Tổng bí thư, như ông thích ăn kẹo lạc, sữa chua. Vì thế, trên bàn làm việc của ông lúc nào cũng có lọ kẹo. Mỗi lần các y, bác sĩ ngồi quanh nghe kể chuyện, ông đều lấy kẹo ra mời. Khi ăn cơm, dù có bớt lại một phần cơm hay thức ăn trong khẩu phần, nhưng lúc nào Tổng bí thư cũng ăn hết phần sữa chua. "Những gì Tổng bí thư để lại ấn tượng cho chúng tôi là tấm gương giản dị, mộc mạc, chân thành, rất quan tâm đến đời sống anh chị em trong khoa", điều dưỡng Hồng nói. Ông quan tâm hỏi han về con cái các nhân viên y tế, như cháu bao nhiêu tuổi, đi học thế nào, có khó khăn gì không? Giây phút cuối cùng biết không thể cứu Tổng bí thư, nhiều y bác sĩ đã bật khóc. "Những ngày qua, khi Tổng bí thư rời xa căn phòng này, chúng tôi vẫn luôn hướng mắt vào bàn làm việc của ông, nhớ về những lời hỏi han ân cần, những lời hát, câu thơ mà ông đã đọc. Đó là sự mất mát lớn", các y bác sĩ Bệnh viện 108 tâm sự. Tổng Bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp. Tổng bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp 13h38 ngày 19/7, Tổng bí thư Nguyễn Phú Trọng từ trần tại Bệnh viện Trung ương Quân đội 108 sau thời gian lâm bệnh, dù đã được Đảng, Nhà nước, tập thể giáo sư, bác sĩ, tận tình cứu chữa, gia đình hết lòng chăm sóc. Ông thọ 80 tuổi. Ban Chấp hành Trung ương Đảng, Quốc hội, Chủ tịch nước, Chính phủ, Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam đánh giá trong gần 60 năm công tác, Tổng bí thư Nguyễn Phú Trọng "đã có nhiều công lao to lớn, đặc biệt xuất sắc đối với sự nghiệp cách mạng vẻ vang của Đảng và dân tộc". Ông đã được Đảng, Nhà nước tặng thưởng Huân chương Sao vàng, Huy hiệu 55 năm tuổi Đảng và nhiều Huân, Huy chương cao quý khác của Việt Nam và quốc tế. Theo Thông cáo đặc biệt phát chiều 20/7, linh cữu Tổng bí thư Nguyễn Phú Trọng được quàn tại Nhà tang lễ Quốc gia số 5 Trần Thánh Tông, TP Hà Nội. Lễ viếng được tổ chức từ 7h đến 22h ngày 25/7 và 7h đến 13h ngày 26/7; lễ truy điệu 13h ngày 26/7. Lễ an táng lúc 15h cùng ngày tại Nghĩa trang Mai Dịch. Lễ viếng, lễ truy điệu Tổng bí thư Nguyễn Phú Trọng được tổ chức cùng thời gian trên tại hội trường Thống Nhất (TP HCM) và tại quê nhà xã Đông Hội, huyện Đông Anh, TP Hà Nội. Trong hai ngày Quốc tang, công sở, nơi công cộng treo cờ rủ và ngừng các hoạt động vui chơi giải trí.Dù sức khỏe yếu dần, Tổng bí thư Nguyễn Phú Trọng vẫn duy trì lịch làm việc, sáng nghe trợ lý báo cáo, chiều họp với lãnh đạo Nhà nước. "Tổng bí thư làm việc đến hơi thở cuối cùng", PGS Nguyễn Phương Đông, bác sĩ chăm sóc sức khỏe cho Tổng bí thư nhiều năm qua ở Bệnh viện Trung ương Quân đội 108, cho biết sáng 23/7. Theo PGS Đông, hàng ngày khoảng 9h-9h30, Tổng bí thư nghe các trợ lý, thư ký báo cáo tình hình công việc. Sau 10h30 và buổi chiều, ông tiếp các lãnh đạo Đảng, Nhà nước; ngồi đọc và nghiên cứu tài liệu khi sức khỏe tốt. "Ngày 13/7, Tổng bí thư vẫn làm việc nhưng chiều chúng tôi phải đặt ống thở máy", bác sĩ Đông kể. Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu Chăm sóc Tổng bí thư hơn 4 năm qua, thiếu tá, điều dưỡng Nguyễn Thị Hồng nói "rất khâm phục sức làm việc phi thường của Tổng bí thư". Ông không dành nhiều thời gian để nghỉ ngơi. Khi tỉnh giấc, ngoài lúc uống trà buổi sáng, tập thể dục, Tổng bí thư sẽ đọc báo, làm việc, tiếp khách. Khi nào mệt, bác sĩ, điều dưỡng sẽ đề nghị ông nghỉ ngơi. "Chúng tôi bất ngờ trước sức làm việc của Tổng bí thư và thấy mình quá nhỏ bé", Thiếu tướng GS Lê Hữu Song, Giám đốc Bệnh viện Trung ương Quân đội 108, nói. Ông cho biết, Ban Bảo vệ chăm sóc sức khỏe Trung ương cùng bệnh viện 108 đã hội chẩn cùng chuyên gia y tế trong và ngoài nước, đưa ra phương án điều trị tốt nhất cho Tổng bí thư. "Khi xin thông qua phương án điều trị và sử dụng các kỹ thuật chăm sóc, ông đều nói 'tuân chỉ'. Bệnh nhân đặc biệt này luôn kiên trì điều trị và tuyệt đối tuân thủ chỉ định, cố gắng ăn và tập từng bước để sức khỏe bình phục trở lại", GS Song chia sẻ. Bác sĩ Đông (phải) cùng điều dưỡng Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp Bác sĩ Nguyễn Phương Đông cùng điều dưỡng Nguyễn Thị Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp Phía ngoài căn phòng điều trị, một bộ bàn ghế gỗ được sắp xếp ở hành lang để Tổng bí thư Nguyễn Phú Trọng ngồi thư giãn. Mỗi ngày, ông sẽ ngồi đây ngắm sông Hồng lúc bình minh và rạng đông, nói chuyện thời sự, hoặc trò chuyện vui vẻ với các y bác sĩ. Đôi lúc ông sẽ đọc thơ về phong cảnh, cuộc sống, kể về thời đạp xe trên triền đê quê mình. Theo điều dưỡng Hồng, Tổng bí thư tập thể dục vào sáng sớm và buổi tối. Khi đi bộ dọc hành lang bệnh viện, ông rất thích hát bài Bài ca Bắc Sơn. Các y bác sĩ trong ca trực sẽ tập và hát cùng ông vài câu, như Bắc Sơn nơi đó xa trường xưa, Bắc Sơn đây núi rừng chiến khu... Không khí "rộn cả góc hành lang". Chị Hồng nhớ từng sở thích của Tổng bí thư, như ông thích ăn kẹo lạc, sữa chua. Vì thế, trên bàn làm việc của ông lúc nào cũng có lọ kẹo. Mỗi lần các y, bác sĩ ngồi quanh nghe kể chuyện, ông đều lấy kẹo ra mời. Khi ăn cơm, dù có bớt lại một phần cơm hay thức ăn trong khẩu phần, nhưng lúc nào Tổng bí thư cũng ăn hết phần sữa chua. "Những gì Tổng bí thư để lại ấn tượng cho chúng tôi là tấm gương giản dị, mộc mạc, chân thành, rất quan tâm đến đời sống anh chị em trong khoa", điều dưỡng Hồng nói. Ông quan tâm hỏi han về con cái các nhân viên y tế, như cháu bao nhiêu tuổi, đi học thế nào, có khó khăn gì không? Giây phút cuối cùng biết không thể cứu Tổng bí thư, nhiều y bác sĩ đã bật khóc. "Những ngày qua, khi Tổng bí thư rời xa căn phòng này, chúng tôi vẫn luôn hướng mắt vào bàn làm việc của ông, nhớ về những lời hỏi han ân cần, những lời hát, câu thơ mà ông đã đọc. Đó là sự mất mát lớn", các y bác sĩ Bệnh viện 108 tâm sự. Tổng Bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp. Tổng bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp 13h38 ngày 19/7, Tổng bí thư Nguyễn Phú Trọng từ trần tại Bệnh viện Trung ương Quân đội 108 sau thời gian lâm bệnh, dù đã được Đảng, Nhà nước, tập thể giáo sư, bác sĩ, tận tình cứu chữa, gia đình hết lòng chăm sóc. Ông thọ 80 tuổi. Ban Chấp hành Trung ương Đảng, Quốc hội, Chủ tịch nước, Chính phủ, Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam đánh giá trong gần 60 năm công tác, Tổng bí thư Nguyễn Phú Trọng "đã có nhiều công lao to lớn, đặc biệt xuất sắc đối với sự nghiệp cách mạng vẻ vang của Đảng và dân tộc". Ông đã được Đảng, Nhà nước tặng thưởng Huân chương Sao vàng, Huy hiệu 55 năm tuổi Đảng và nhiều Huân, Huy chương cao quý khác của Việt Nam và quốc tế. Theo Thông cáo đặc biệt phát chiều 20/7, linh cữu Tổng bí thư Nguyễn Phú Trọng được quàn tại Nhà tang lễ Quốc gia số 5 Trần Thánh Tông, TP Hà Nội. Lễ viếng được tổ chức từ 7h đến 22h ngày 25/7 và 7h đến 13h ngày 26/7; lễ truy điệu 13h ngày 26/7. Lễ an táng lúc 15h cùng ngày tại Nghĩa trang Mai Dịch. Lễ viếng, lễ truy điệu Tổng bí thư Nguyễn Phú Trọng được tổ chức cùng thời gian trên tại hội trường Thống Nhất (TP HCM) và tại quê nhà xã Đông Hội, huyện Đông Anh, TP Hà Nội. Trong hai ngày Quốc tang, công sở, nơi công cộng treo cờ rủ và ngừng các hoạt động vui chơi giải trí.Dù sức khỏe yếu dần, Tổng bí thư Nguyễn Phú Trọng vẫn duy trì lịch làm việc, sáng nghe trợ lý báo cáo, chiều họp với lãnh đạo Nhà nước.
+
+            "Tổng bí thư làm việc đến hơi thở cuối cùng", PGS Nguyễn Phương Đông, bác sĩ chăm sóc sức khỏe cho Tổng bí thư nhiều năm qua ở Bệnh viện Trung ương Quân đội 108, cho biết sáng 23/7.
+            
+            Theo PGS Đông, hàng ngày khoảng 9h-9h30, Tổng bí thư nghe các trợ lý, thư ký báo cáo tình hình công việc. Sau 10h30 và buổi chiều, ông tiếp các lãnh đạo Đảng, Nhà nước; ngồi đọc và nghiên cứu tài liệu khi sức khỏe tốt.
+            
+            "Ngày 13/7, Tổng bí thư vẫn làm việc nhưng chiều chúng tôi phải đặt ống thở máy", bác sĩ Đông kể.
+            
+            Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu
+            Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận. Ảnh chụp ngày 10/5/2024. Ảnh: Tư liệu
+            
+            Chăm sóc Tổng bí thư hơn 4 năm qua, thiếu tá, điều dưỡng Nguyễn Thị Hồng nói "rất khâm phục sức làm việc phi thường của Tổng bí thư". Ông không dành nhiều thời gian để nghỉ ngơi. Khi tỉnh giấc, ngoài lúc uống trà buổi sáng, tập thể dục, Tổng bí thư sẽ đọc báo, làm việc, tiếp khách. Khi nào mệt, bác sĩ, điều dưỡng sẽ đề nghị ông nghỉ ngơi.
+            
+            "Chúng tôi bất ngờ trước sức làm việc của Tổng bí thư và thấy mình quá nhỏ bé", Thiếu tướng GS Lê Hữu Song, Giám đốc Bệnh viện Trung ương Quân đội 108, nói.
+            
+            Ông cho biết, Ban Bảo vệ chăm sóc sức khỏe Trung ương cùng bệnh viện 108 đã hội chẩn cùng chuyên gia y tế trong và ngoài nước, đưa ra phương án điều trị tốt nhất cho Tổng bí thư. "Khi xin thông qua phương án điều trị và sử dụng các kỹ thuật chăm sóc, ông đều nói 'tuân chỉ'. Bệnh nhân đặc biệt này luôn kiên trì điều trị và tuyệt đối tuân thủ chỉ định, cố gắng ăn và tập từng bước để sức khỏe bình phục trở lại", GS Song chia sẻ.
+            
+            Bác sĩ Đông (phải) cùng điều dưỡng Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp
+            Bác sĩ Nguyễn Phương Đông cùng điều dưỡng Nguyễn Thị Hồng chia sẻ về thời gian chăm sóc Tổng bí thư. Ảnh: Bệnh viện cung cấp
+            
+            Phía ngoài căn phòng điều trị, một bộ bàn ghế gỗ được sắp xếp ở hành lang để Tổng bí thư Nguyễn Phú Trọng ngồi thư giãn. Mỗi ngày, ông sẽ ngồi đây ngắm sông Hồng lúc bình minh và rạng đông, nói chuyện thời sự, hoặc trò chuyện vui vẻ với các y bác sĩ. Đôi lúc ông sẽ đọc thơ về phong cảnh, cuộc sống, kể về thời đạp xe trên triền đê quê mình.
+            
+            Theo điều dưỡng Hồng, Tổng bí thư tập thể dục vào sáng sớm và buổi tối. Khi đi bộ dọc hành lang bệnh viện, ông rất thích hát bài Bài ca Bắc Sơn. Các y bác sĩ trong ca trực sẽ tập và hát cùng ông vài câu, như Bắc Sơn nơi đó xa trường xưa, Bắc Sơn đây núi rừng chiến khu... Không khí "rộn cả góc hành lang".
+            
+            Chị Hồng nhớ từng sở thích của Tổng bí thư, như ông thích ăn kẹo lạc, sữa chua. Vì thế, trên bàn làm việc của ông lúc nào cũng có lọ kẹo. Mỗi lần các y, bác sĩ ngồi quanh nghe kể chuyện, ông đều lấy kẹo ra mời. Khi ăn cơm, dù có bớt lại một phần cơm hay thức ăn trong khẩu phần, nhưng lúc nào Tổng bí thư cũng ăn hết phần sữa chua.
+            
+            "Những gì Tổng bí thư để lại ấn tượng cho chúng tôi là tấm gương giản dị, mộc mạc, chân thành, rất quan tâm đến đời sống anh chị em trong khoa", điều dưỡng Hồng nói. Ông quan tâm hỏi han về con cái các nhân viên y tế, như cháu bao nhiêu tuổi, đi học thế nào, có khó khăn gì không?
+            
+            Giây phút cuối cùng biết không thể cứu Tổng bí thư, nhiều y bác sĩ đã bật khóc. "Những ngày qua, khi Tổng bí thư rời xa căn phòng này, chúng tôi vẫn luôn hướng mắt vào bàn làm việc của ông, nhớ về những lời hỏi han ân cần, những lời hát, câu thơ mà ông đã đọc. Đó là sự mất mát lớn", các y bác sĩ Bệnh viện 108 tâm sự.
+            
+            Tổng Bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp.
+            Tổng bí thư Nguyễn Phú Trọng dự lễ kỷ niệm 70 năm ngày Truyền thống Bệnh viện TWQĐ 108 tháng 4/2021. Ảnh: Bệnh viện cung cấp
+            
+            13h38 ngày 19/7, Tổng bí thư Nguyễn Phú Trọng từ trần tại Bệnh viện Trung ương Quân đội 108 sau thời gian lâm bệnh, dù đã được Đảng, Nhà nước, tập thể giáo sư, bác sĩ, tận tình cứu chữa, gia đình hết lòng chăm sóc. Ông thọ 80 tuổi.
+            
+            Ban Chấp hành Trung ương Đảng, Quốc hội,<span id="123"></span> Chủ tịch nước, Chính phủ, Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam đánh giá trong gần 60 năm công tác, Tổng bí thư Nguyễn Phú Trọng "đã có nhiều công lao to lớn, đặc biệt xuất sắc đối với sự nghiệp cách mạng vẻ vang của Đảng và dân tộc". Ông đã được Đảng, Nhà nước tặng thưởng Huân chương Sao vàng, Huy hiệu 55 năm tuổi Đảng và nhiều Huân, Huy chương cao quý khác của Việt Nam và quốc tế.
+            
+            Theo Thông cáo đặc biệt phát chiều 20/7, linh cữu Tổng bí thư Nguyễn Phú Trọng được quàn tại Nhà tang lễ Quốc gia số 5 Trần Thánh Tông, TP Hà Nội. Lễ viếng được tổ chức từ 7h đến 22h ngày 25/7 và 7h đến 13h ngày 26/7; lễ truy điệu 13h ngày 26/7. Lễ an táng lúc 15h cùng ngày tại Nghĩa trang Mai Dịch.
+            
+            Lễ viếng, lễ truy điệu Tổng bí thư Nguyễn Phú Trọng được tổ chức cùng thời gian trên tại hội trường Thống Nhất (TP HCM) và tại quê nhà xã Đông Hội, huyện Đông Anh, TP Hà Nội. Trong hai ngày Quốc tang, công sở, nơi công cộng treo cờ rủ và ngừng các hoạt động vui chơi giải trí.</p>
+    </body>
+ </html>

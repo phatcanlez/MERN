@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu{
+    padding: 0;
+    background-color: #c6a7a5;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.container{
+    border: 2px solid black;
+}
+
+.left-side{
+    padding: 10px;
+    background-color: aquamarine;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.right-side{
+    padding: 10px;
+    background-color: lavender;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.footer{
+    padding: 10px;
+    background-color: blanchedalmond;
+}
